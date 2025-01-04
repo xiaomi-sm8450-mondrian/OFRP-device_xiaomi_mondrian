@@ -6,14 +6,14 @@
 #
 # 关于橙狐变量详见 fox_12.1/vendor/recovery/orangefox_build_vars.txt
 
-	export TW_DEFAULT_LANGUAGE="zh_CN"
+	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
 	export ALLOW_MISSING_DEPENDENCIES=true
 
 	echo -e "\x1b[96mmondrian: 开始添加OrangeFox Vars...\x1b[m"
 	## 构建信息
 	# 设置显示在关于页面里的维护人员名称
-	export OF_MAINTAINER=ymdzq
+	export OF_MAINTAINER=keosh
 	# 设置版本号为日期
 	export FOX_MAINTAINER_PATCH_VERSION=$(date +%y%m%d)
 	# 当你需要标记出这个recovery是一个特殊版本时使用
