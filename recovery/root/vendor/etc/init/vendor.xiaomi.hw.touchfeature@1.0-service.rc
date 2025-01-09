@@ -3,6 +3,10 @@ on boot
     chmod 0664 /sys/class/touch/touch_dev/update_rawdata
     chown system system /proc/tp_lockdown_info
     chmod 0664 /proc/tp_lockdown_info
+    chmod 0666 /dev/mipp_pen0
+    chown system system /dev/mipp_pen0
+on charger
+    write /sys/class/touch/touch_dev/touch_doze_analysis 6
 
 service touch_report /vendor/bin/touch_report
     class hal
