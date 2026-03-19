@@ -44,11 +44,17 @@
 	# 使用橙狐编译的NANO编辑器
 	# export FOX_USE_NANO_EDITOR=1
 	# 添加phhusson's lptools工具
-	export OF_ENABLE_LPTOOLS=1
+	export OF_ENABLE_ALL_PARTITION_TOOLS=1
 
 	## 添加橙狐特殊处理
 	# 标记该设备为带有recovery分区的ab设备
 	export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+  export OF_RECOVERY_AB_FULL_REFLASH_RAMDISK=1
+
+  # OrangeFox settings
+  export OF_ENABLE_USB_STORAGE=1
+  export OF_FLASHLIGHT_ENABLE=1
+  
 	# 设定recovery、system、vendor、boot分区路径
 	# export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
